@@ -11,6 +11,7 @@ body {
 }
 header {
   position: sticky;
+  top: 0;
   background-color: rgb(202, 206, 209);
 }
 header h1 {
@@ -101,4 +102,81 @@ footer article section h3 {
 }
 footer article section li {
   margin-bottom: 8px;
+}
+
+/*RESPONSIVE WEB CON MEDIA QUERIES*/
+
+/*Desktop*/
+@media screen and (min-width: 1024px) and (max-width: 1680px) {
+  .menu {
+    font-size: 27, 2px;
+    gap: 64px;
+  }
+  main article section p {
+    font-size: 19, 2px;
+  }
+  img {
+    max-width: 450px;
+  }
+}
+
+/*Tablet*/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  header {
+    z-index: 110;
+  }
+  main article {
+    z-index: 2;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    justify-items: center;
+  }
+  img {
+    z-index: 3;
+    display: flex;
+    justify-items: center;
+    width: 400px;
+    width: 500px;
+    height: 450px;
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-left: 100px;
+  }
+}
+/*Android*/
+@media screen and (max-width: 480px) {
+  header {
+    z-index: 110;
+    font-size: small;
+  }
+  main article {
+    z-index: 2;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    justify-items: center;
+  }
+  main article section p {
+    font-size: 19px;
+  }
+  img {
+    z-index: 3;
+    display: flex;
+    justify-items: center;
+    width: 300px;
+    height: 350px;
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-left: 90px;
+  }
+  .Resources {
+    font-size: 14px;
+  }
+  .Company {
+    font-size: 14px;
+  }
+  .Social {
+    font-size: 14px;
+  }
 }
