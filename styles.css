@@ -145,7 +145,7 @@ footer article section li {
   }
 }
 /*Android*/
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) and (max-width: 768px) {
   header {
     z-index: 110;
     font-size: small;
